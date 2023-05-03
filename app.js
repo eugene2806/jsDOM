@@ -18,10 +18,7 @@ function inputChanged(e) {
     }
 }
 
-localStorage.setItem('token', '3434fifn')
-localStorage.setItem('token2', true)
-const token2 = localStorage.getItem('token2')
-localStorage.removeItem('token2')
-localStorage.clear()
-console.log(typeof token2)
-// console.log(localStorage.getItem('token2'))
+const obj = JSON.parse('{ "a": 1 }')
+console.log(obj)
+const str = JSON.stringify(obj)
+console.log(str)
